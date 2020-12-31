@@ -62,3 +62,9 @@ nav li {
     background-color: var(--peach);
     border-radius: 15px;
 }
+
+.card-text-content {
+    color: #fff;
+    width: 540px;
+    height: 350px;
+}
