@@ -120,6 +120,109 @@ nav li {
     position: absolute;
     width: 1110px;
     height: 640px;
-    left: 470px;
+    left: 465px;
     top: 0px;
+}
+.grid-container {
+    margin-top: 160px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 30px;
+    grid-template-areas:
+        "item-1 item-2"
+        "item-1 item-3";
+}
+.item-1 {
+    grid-area: item-1;
+    position: relative;
+    opacity: 1;
+    border-radius: 500px;
+}
+.project__image {
+    border-radius: 15px;
+}
+.item-2 {
+    grid-area: item-2;
+    position: relative;
+    opacity: 1;
+    border-radius: 5px;
+    margin-bottom: 19px;
+}
+.item-3 {
+    grid-area: item-3;
+    position: relative;
+    opacity: 1;
+    border-radius: 5px;
+}
+
+.project__text-web {
+    position: absolute;
+    top: 0;
+    left: 0px;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    color: #fff;
+    width: 268px;
+    height: 94px;
+    margin-top: 273px;
+    margin-left: 137px;
+}
+.project__text-web h2 {
+    font-family: Jost;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 48px;
+    text-transform: uppercase;
+}
+
+.project__text-app {
+    position: absolute;
+    top: 0;
+    left: 0px;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    color: #fff;
+    width: 268px;
+    height: 94px;
+    margin-top: 107px;
+    margin-left: 144px;
+}
+
+.project__text-app h2 {
+    font-family: Jost;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 48px;
+    text-transform: uppercase;
+}
+
+.project__text-graphic h2 {
+    font-family: Jost;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 48px;
+    text-transform: uppercase;
+}
+
+.project__text-graphic {
+    position: absolute;
+    top: 0;
+    left: 0px;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    color: #fff;
+    width: 364px;
+    height: 94px;
+    margin-top: 107px;
+    margin-left: 89px;
 }
