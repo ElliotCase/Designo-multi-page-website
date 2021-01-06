@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Jost:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600&display=swap");
 
 :root {
     --peach: hsl(11, 73%, 66%);
@@ -332,15 +332,37 @@ nav li {
     width: 459px;
     height: 174px;
     color: #fff;
+    margin-left: 100px;
+    margin-top: 72px;
 }
 
-.contact.title {
+.contact-title {
+    font-family: Jost;
+    font-style: normal;
     font-weight: 500;
     font-size: 40px;
     line-height: 40px;
-    color: var(--white);
+    color: #ffffff;
+    height: 98px;
+    width: 268px;
 }
 .contact-description {
     font-size: 16px;
     line-height: 26px;
+}
+
+.contact-btn {
+    width: 152px;
+    height: 56px;
+    margin-top: 118px;
+    margin-right: 96px;
+    background: #ffffff;
+    border-radius: 8px;
+    border: none;
+    font-size: 15px;
+    line-height: 22px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #000;
+    font-weight: 600;
 }
