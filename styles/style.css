@@ -284,7 +284,7 @@ nav li {
     width: 350px;
     height: 412px;
     text-align: center;
-    margin-bottom: 160px;
+    margin-bottom: 380px;
 }
 
 .gap {
@@ -311,21 +311,29 @@ nav li {
 }
 
 .skills-text {
+    width: 350px;
+    height: 104px;
     font-family: Jost;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
     line-height: 26px;
+    /* or 162% */
+
+    text-align: center;
+
     color: #333136;
 }
 
 .contact-box {
+    position: absolute;
     width: 1111px;
     height: 292px;
     background: #e7816b;
     border-radius: 15px;
     display: flex;
     justify-content: space-between;
+    top: 2327px;
 }
 
 .contact-text-content {
@@ -364,5 +372,33 @@ nav li {
     letter-spacing: 1px;
     text-transform: uppercase;
     color: #000;
-    font-weight: 600;
+    font-weight: 500;
+}
+
+footer {
+    width: 100%;
+    height: 393px;
+
+    background: #1d1c1e;
+}
+
+footer img {
+    width: 202px;
+    height: 27px;
+}
+footer a {
+    color: #fff;
+    margin-left: 42px;
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 14px;
+    letter-spacing: 2px;
+}
+.footer-content {
+    padding-top: 144px;
+    justify-content: space-between;
+}
+
+.flex {
+    display: flex;
 }
