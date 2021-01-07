@@ -129,7 +129,7 @@ nav li {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     gap: 0px 30px;
-    margin-bottom: 160px;
+    margin-bottom: 135px;
 
     grid-template-areas:
         "item-1 item-2"
@@ -284,7 +284,7 @@ nav li {
     width: 350px;
     height: 412px;
     text-align: center;
-    margin-bottom: 140px;
+    margin-bottom: 160px;
 }
 
 .gap {
