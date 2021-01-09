@@ -295,7 +295,7 @@ nav li {
     border-radius: 50%;
     background-image: url(/assets/shared/desktop/bg-pattern-small-circle.svg);
     background-size: cover;
-    margin-bottom: 45px;
+    margin-bottom: 44px;
 }
 
 .skills-title {
@@ -340,7 +340,7 @@ nav li {
     width: 459px;
     height: 174px;
     color: #fff;
-    margin-left: 100px;
+    margin-left: 98px;
     margin-top: 72px;
 }
 
@@ -373,6 +373,11 @@ nav li {
     text-transform: uppercase;
     color: #000;
     font-weight: 500;
+    font-size: 15px;
+    line-height: 22px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-style: normal;
 }
 
 footer {
@@ -437,15 +442,18 @@ footer a {
 .footer-contact {
     width: 350px;
     height: 78px;
-    font-weight: bold;
     font-size: 16px;
     line-height: 26px;
     color: #ffffff;
     margin-right: 30px;
     mix-blend-mode: normal;
     opacity: 0.5;
+    font-weight: bold;
 }
 
 .footer-contact-left {
     margin-right: 197px;
+}
+.footer-contact span {
+    font-weight: normal;
 }
