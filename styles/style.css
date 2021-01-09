@@ -382,11 +382,20 @@ footer {
     background: #1d1c1e;
 }
 
-footer img {
+.footer-logo {
     width: 202px;
     height: 27px;
 }
 footer a {
+    color: #fff;
+    margin-left: 16px;
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 14px;
+    letter-spacing: 2px;
+}
+
+.footer-links {
     color: #fff;
     margin-left: 42px;
     text-transform: uppercase;
@@ -396,9 +405,48 @@ footer a {
 }
 .footer-content {
     padding-top: 144px;
+    justify-content: ;
+    margin-bottom: 40px;
     justify-content: space-between;
 }
 
 .flex {
     display: flex;
+}
+
+.line {
+    width: 1111px;
+    height: 1px;
+    background: #ffffff;
+    mix-blend-mode: normal;
+    opacity: 0.1;
+    margin-bottom: 31px;
+}
+
+.footer-content-bottom {
+    justify-content: space-between;
+    height: 393px;
+}
+
+.footer-icons {
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+.footer-contact {
+    width: 350px;
+    height: 78px;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 26px;
+    color: #ffffff;
+    margin-right: 30px;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+}
+
+.footer-contact-left {
+    margin-right: 197px;
 }
