@@ -340,7 +340,7 @@ nav li {
     width: 459px;
     height: 174px;
     color: #fff;
-    margin-left: 98px;
+    margin-left: 93px;
     margin-top: 72px;
 }
 
@@ -424,12 +424,11 @@ footer a {
     background: #ffffff;
     mix-blend-mode: normal;
     opacity: 0.1;
-    margin-bottom: 30px;
+    margin-bottom: 25px;
 }
 
 .footer-content-bottom {
     justify-content: space-between;
-    height: 393px;
 }
 
 .footer-icons {
