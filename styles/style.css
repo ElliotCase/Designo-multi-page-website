@@ -114,6 +114,31 @@ nav li {
     left: 465px;
     top: 0px;
 }
+.card-section::before {
+    content: url(/assets/shared/desktop/bg-pattern-leaf.svg);
+    position: absolute;
+    width: 1006px;
+    height: 594px;
+    left: -219px;
+    top: 308px;
+    z-index: -11;
+}
+
+.skills-section::before {
+    content: url(/assets/shared/desktop/bg-pattern-leaf.svg);
+    position: absolute;
+    width: 1006px;
+    height: 594px;
+    top: 1873px;
+    left: 897px;
+    background: #f1f3f5;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+    border-radius: 297px 297px 297px 0px;
+    transform: rotate(-180deg);
+    overflow: hidden;
+    z-index: -1;
+}
 .grid-container {
     margin-top: 160px;
     display: grid;
@@ -231,6 +256,7 @@ nav li {
     width: 100%;
     height: 640px;
     border-radius: 15px;
+    transition: all 0.7s ease;
 }
 
 .darker__smallsize {
@@ -242,6 +268,7 @@ nav li {
     width: 100%;
     height: 308px;
     border-radius: 15px;
+    transition: all 0.7s ease;
 }
 .orange:hover {
     background-color: var(--peach);
@@ -259,7 +286,6 @@ nav li {
     font-weight: 500;
     font-size: 40px;
     line-height: 48px;
-    /* identical to box height, or 120% */
     letter-spacing: 2px;
 }
 .project__text-app,
@@ -299,7 +325,7 @@ nav li {
     border-radius: 50%;
     background-image: url(/assets/shared/desktop/bg-pattern-small-circle.svg);
     background-size: cover;
-    margin-bottom: 44px;
+    margin-bottom: 43px;
 }
 
 .skills-title {
@@ -313,8 +339,7 @@ nav li {
     text-transform: uppercase;
     margin-bottom: 32px;
 }
-.item-1:hover {
-}
+
 .skills-text {
     width: 350px;
     height: 104px;
@@ -323,10 +348,7 @@ nav li {
     font-weight: normal;
     font-size: 16px;
     line-height: 26px;
-    /* or 162% */
-
     text-align: center;
-
     color: #333136;
 }
 
@@ -420,7 +442,6 @@ footer a {
 }
 .footer-content {
     padding-top: 144px;
-    justify-content: ;
     margin-bottom: 40px;
     justify-content: space-between;
 }
@@ -466,7 +487,4 @@ footer a {
 }
 .footer-contact span {
     font-weight: normal;
-}
-.footer-icons img:hover {
-    color: #ffad9b;
 }
