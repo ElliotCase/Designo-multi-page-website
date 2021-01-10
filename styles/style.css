@@ -122,7 +122,6 @@ nav li {
     grid-template-rows: 1fr 1fr;
     gap: 0px 30px;
     margin-bottom: 135px;
-
     grid-template-areas:
         "item-1 item-2"
         "item-1 item-3";
@@ -298,10 +297,22 @@ nav li {
 }
 
 .card-img {
-    border-radius: 50%;
     background-image: url(/assets/shared/desktop/bg-pattern-small-circle.svg);
     background-size: cover;
     margin-bottom: 43px;
+}
+.card-img::before {
+    content: "";
+    width: 202px;
+    height: 202px;
+    z-index: 1;
+    position: absolute;
+    top: 0px;
+    right: unset;
+    bottom: unset;
+    left: 74px;
+    opacity: 0.2;
+    border-radius: 50%;
 }
 
 .skills-title {
@@ -478,5 +489,20 @@ footer a {
         top: 475px;
         background: url(/assets/shared/desktop/bg-pattern-leaf.svg);
         z-index: -2;
+    }
+    .skills-section::after {
+        content: "";
+        position: absolute;
+        top: 1873px;
+        right: 0px;
+        bottom: unset;
+        left: unset;
+        width: 1006px;
+        height: 594px;
+        background: url(/assets/shared/desktop/bg-pattern-leaf.svg);
+        z-index: -2;
+        -webkit-transform: rotate(180deg);
+        transform: rotate(180deg);
+        overflow: hidden;
     }
 }
