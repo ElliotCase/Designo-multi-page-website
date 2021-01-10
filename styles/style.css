@@ -114,16 +114,6 @@ nav li {
     left: 465px;
     top: 0px;
 }
-.card-section::before {
-    content: url(/assets/shared/desktop/bg-pattern-leaf.svg);
-    height: 594px;
-    left: 234px;
-    position: absolute;
-    right: unset;
-    top: 476px;
-    width: 1006px;
-    z-index: -2;
-}
 
 .grid-container {
     margin-top: 160px;
@@ -473,4 +463,20 @@ footer a {
 }
 .footer-contact span {
     font-weight: normal;
+}
+
+@media screen and (min-width: 1200px) {
+    .card-section::before {
+        content: "";
+        position: absolute;
+        top: 325px;
+        right: unset;
+        bottom: unset;
+        width: 1006px;
+        height: 594px;
+        left: 0px;
+        top: 475px;
+        background: url(/assets/shared/desktop/bg-pattern-leaf.svg);
+        z-index: -2;
+    }
 }
