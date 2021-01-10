@@ -116,29 +116,15 @@ nav li {
 }
 .card-section::before {
     content: url(/assets/shared/desktop/bg-pattern-leaf.svg);
-    position: absolute;
-    width: 1006px;
     height: 594px;
-    left: -219px;
-    top: 308px;
-    z-index: -11;
+    left: 234px;
+    position: absolute;
+    right: unset;
+    top: 476px;
+    width: 1006px;
+    z-index: -2;
 }
 
-.skills-section::before {
-    content: url(/assets/shared/desktop/bg-pattern-leaf.svg);
-    position: absolute;
-    width: 1006px;
-    height: 594px;
-    top: 1873px;
-    left: 897px;
-    background: #f1f3f5;
-    mix-blend-mode: normal;
-    opacity: 0.5;
-    border-radius: 297px 297px 297px 0px;
-    transform: rotate(-180deg);
-    overflow: hidden;
-    z-index: -1;
-}
 .grid-container {
     margin-top: 160px;
     display: grid;
