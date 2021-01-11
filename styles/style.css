@@ -235,15 +235,18 @@ nav li {
     line-height: 22px;
     letter-spacing: 5px;
     text-transform: uppercase;
+    letter-spacing: 5px;
 }
-
+.projects__arrow {
+    margin-left: 14px;
+}
 .flex-row {
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
 
-.skills-card {
+.skills__card {
     width: 350px;
     height: 412px;
     text-align: center;
@@ -254,13 +257,13 @@ nav li {
     margin-right: 30px;
 }
 
-.card-img {
+.skills__img {
     background-image: url(/assets/shared/desktop/bg-pattern-small-circle.svg);
     background-size: cover;
     margin-bottom: 43px;
 }
 
-.skills-title {
+.skills__title {
     font-family: Jost;
     font-style: normal;
     font-weight: 500;
@@ -272,7 +275,7 @@ nav li {
     margin-bottom: 32px;
 }
 
-.skills-text {
+.skills__description {
     width: 350px;
     height: 104px;
     font-family: Jost;
@@ -295,7 +298,7 @@ nav li {
     top: 2327px;
 }
 
-.contact-text-content {
+.contact__textbox {
     width: 459px;
     height: 174px;
     color: #fff;
@@ -303,7 +306,7 @@ nav li {
     margin-top: 72px;
 }
 
-.contact-title {
+.contact__title {
     font-family: Jost;
     font-style: normal;
     font-weight: 500;
@@ -313,12 +316,12 @@ nav li {
     height: 98px;
     width: 268px;
 }
-.contact-description {
+.contact__description {
     font-size: 16px;
     line-height: 26px;
 }
 
-.contact-btn {
+.contact__btn {
     margin-top: 118px;
     margin-right: 96px;
 }
@@ -352,7 +355,7 @@ footer {
     background: #1d1c1e;
 }
 
-.footer-logo {
+.footer__logo {
     width: 202px;
     height: 27px;
 }
@@ -364,7 +367,7 @@ footer a {
     line-height: 14px;
 }
 
-.footer-links {
+.footer__links {
     color: #fff;
     margin-left: 42px;
     text-transform: uppercase;
@@ -372,7 +375,7 @@ footer a {
     line-height: 14px;
     letter-spacing: 2px;
 }
-.footer-content {
+.footer__content {
     padding-top: 144px;
     margin-bottom: 40px;
     justify-content: space-between;
@@ -391,18 +394,18 @@ footer a {
     margin-bottom: 25px;
 }
 
-.footer-content-bottom {
+.footer__bottom {
     justify-content: space-between;
 }
 
-.footer-icons {
+.footer__icons {
     position: relative;
     align-items: center;
     justify-content: center;
     padding-top: 50px;
 }
 
-.footer-contact {
+.footer__contact {
     width: 350px;
     height: 78px;
     font-size: 16px;
@@ -414,10 +417,10 @@ footer a {
     font-weight: bold;
 }
 
-.footer-contact-left {
+.footer__contact--left {
     margin-right: 197px;
 }
-.footer-contact span {
+.footer__contact span {
     font-weight: normal;
 }
 
