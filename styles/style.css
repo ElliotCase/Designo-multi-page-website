@@ -236,6 +236,7 @@ nav li {
     letter-spacing: 5px;
     text-transform: uppercase;
     letter-spacing: 5px;
+    font-weight: 500;
 }
 .projects__arrow {
     margin-left: 14px;
