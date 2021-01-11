@@ -182,15 +182,6 @@ nav li {
     margin-left: 89px;
 }
 
-.projects__title {
-    margin-bottom: 24px;
-    font-size: 40px;
-    line-height: 48px;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    font-weight: 500;
-}
-
 .projects__overlay--dark {
     position: absolute;
     top: 0px;
@@ -215,19 +206,19 @@ nav li {
 .graphic-design__projects {
     cursor: pointer;
 }
-.project__title {
-    margin-bottom: 24px;
-    font-family: Jost;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 40px;
-    line-height: 48px;
-    letter-spacing: 2px;
-}
+
 .project__text-app,
 .project__text-graphic,
 .project__text-web {
     pointer-events: none;
+}
+.projects__title {
+    margin-bottom: 23px;
+    font-size: 40px;
+    line-height: 48px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 500;
 }
 
 .projects__description {
@@ -237,9 +228,10 @@ nav li {
     text-transform: uppercase;
     letter-spacing: 5px;
     font-weight: 500;
+    padding-left: 1px;
 }
 .projects__arrow {
-    margin-left: 14px;
+    padding-left: 7px;
 }
 .flex-row {
     display: flex;
