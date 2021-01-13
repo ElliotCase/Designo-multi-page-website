@@ -18,28 +18,39 @@
     list-style: none;
     text-decoration: none;
 }
-
 body {
     font-family: "Jost", sans-serif;
 }
-
 .container {
     width: 1111px;
     margin: 0 auto;
 }
-
 nav {
     margin-top: 64px;
     height: 24px;
     display: flex;
     justify-content: space-between;
 }
-
 nav img {
     width: 196px;
     height: 24px;
 }
+h1 {
+    font-family: Jost;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 48px;
+}
 
+p {
+    font-family: Jost;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 26px;
+    color: #fff;
+}
 .menu {
     display: flex;
     font-size: 20px;
@@ -77,22 +88,12 @@ nav li {
 }
 
 .card__title {
-    font-family: Jost;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 48px;
-    line-height: 48px;
     width: 540px;
     height: 165px;
 }
 
 .card__description {
     margin-top: 11px;
-    font-family: Jost;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 26px;
 }
 
 .card__btn {
@@ -129,25 +130,21 @@ nav li {
 .web-design__projects {
     grid-area: Web-design__projects;
     position: relative;
-    opacity: 1;
     border-radius: 5px;
 }
 .projects__image {
     border-radius: 15px;
     background-color: black;
-    opacity: 1;
 }
 .app-design__projects {
     grid-area: app-design__projects;
     position: relative;
-    opacity: 1;
     border-radius: 5px;
     margin-bottom: 19px;
 }
 .graphic-design__projects {
     grid-area: graphic-design__projects;
     position: relative;
-    opacity: 1;
     border-radius: 5px;
 }
 
@@ -214,11 +211,9 @@ nav li {
 }
 .projects__title {
     margin-bottom: 23px;
-    font-size: 40px;
-    line-height: 48px;
     text-transform: uppercase;
     letter-spacing: 2px;
-    font-weight: 500;
+    font-size: 40px;
 }
 
 .projects__description {
@@ -226,7 +221,6 @@ nav li {
     line-height: 22px;
     letter-spacing: 5px;
     text-transform: uppercase;
-    letter-spacing: 5px;
     font-weight: 500;
     padding-left: 1px;
 }
@@ -257,8 +251,6 @@ nav li {
 }
 
 .skills__title {
-    font-family: Jost;
-    font-style: normal;
     font-weight: 500;
     font-size: 20px;
     line-height: 26px;
@@ -271,11 +263,6 @@ nav li {
 .skills__description {
     width: 350px;
     height: 104px;
-    font-family: Jost;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 26px;
     text-align: center;
     color: #333136;
 }
@@ -300,18 +287,12 @@ nav li {
 }
 
 .contact__title {
-    font-family: Jost;
-    font-style: normal;
     font-weight: 500;
     font-size: 40px;
     line-height: 40px;
     color: #ffffff;
     height: 98px;
     width: 268px;
-}
-.contact__description {
-    font-size: 16px;
-    line-height: 26px;
 }
 
 .contact__btn {
@@ -401,9 +382,6 @@ footer a {
 .footer__contact {
     width: 350px;
     height: 78px;
-    font-size: 16px;
-    line-height: 26px;
-    color: #ffffff;
     margin-right: 35px;
     mix-blend-mode: normal;
     opacity: 0.5;
@@ -461,6 +439,7 @@ footer a {
     z-index: 2;
     position: relative;
     overflow: hidden;
+    margin-bottom: 166px;
 }
 .title-card::after {
     content: url(/assets/shared/desktop/bg-pattern-call-to-action.svg);
@@ -472,29 +451,112 @@ footer a {
     transform: rotate(180deg) scaleX(-1);
 }
 .title-card__heading {
-    font-family: Jost;
-    font-style: normal;
     font-weight: 500;
-    font-size: 48px;
-    line-height: 48px;
-    color: #ffffff;
     padding-top: 64px;
 }
 
 .title-card__description {
-    font-family: Jost;
-    font-style: normal;
-    font-weight: normal;
     font-size: 16px;
-    line-height: 26px;
     text-align: center;
     padding-top: 24px;
 }
-
 .center {
     text-align: center;
 }
-
 .white {
     color: #fff;
+}
+
+.showcase__container {
+    display: grid;
+    width: 1110px;
+    height: 988px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 32px 30px;
+    margin-bottom: 160px;
+    grid-template-areas:
+        "showcase__item-1 showcase__item-2 showcase__item-3"
+        "showcase__item-4 showcase__item-5 showcase__item-6";
+}
+.showcase__item-1 {
+    grid-area: showcase__item-1;
+    width: 350px;
+    height: 478px;
+}
+.showcase__item-2 {
+    grid-area: showcase__item-2;
+}
+.showcase__item-3 {
+    grid-area: showcase__item-3;
+}
+.showcase__item-4 {
+    grid-area: showcase__item-4;
+}
+.showcase__item-5 {
+    grid-area: showcase__item-5;
+}
+.showcase__item-6 {
+    grid-area: showcase__item-6;
+}
+
+.showcase__image {
+    width: 350px;
+    height: 320px;
+    position: relative;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+}
+
+.showcase__card {
+    width: 350px;
+    height: 478px;
+    background: #fdf3f0;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.showcase__description {
+    font-size: 16px;
+    line-height: 26px;
+    color: #333136;
+    text-align: center;
+    margin-top: 16px;
+}
+
+.showcase__title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 26px;
+    text-align: center;
+    letter-spacing: 5px;
+    margin-top: 32px;
+    color: #e7816b;
+    text-transform: uppercase;
+}
+
+.showcase__card:hover {
+    background-color: E7816B;
+}
+
+.showcase__card:hover .showcase__title,
+.showcase__card:hover .showcase__description {
+    color: #fff;
+}
+
+.projects__two-card {
+    width: 1112px;
+    height: 308px;
+    margin-bottom: 160px;
+}
+
+.projects__app-design {
+    position: relative;
+    border-radius: 5px;
+}
+.projects__graphic-design {
+    position: relative;
+    border-radius: 5px;
+    margin-left: 30px;
 }
