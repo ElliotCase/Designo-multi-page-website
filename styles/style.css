@@ -159,6 +159,7 @@ nav li {
     flex-direction: column;
     align-items: center;
     color: #fff;
+    pointer-events: none;
 }
 
 .projects__textbox-web {
@@ -353,6 +354,7 @@ footer a {
     padding-top: 144px;
     margin-bottom: 40px;
     justify-content: space-between;
+    padding-left: 0;
 }
 
 .flex {
@@ -376,13 +378,11 @@ footer a {
     position: relative;
     align-items: center;
     justify-content: center;
-    padding-top: 50px;
 }
 
 .footer__contact {
     width: 350px;
     height: 78px;
-    margin-right: 35px;
     mix-blend-mode: normal;
     opacity: 0.5;
     font-weight: bold;
@@ -424,10 +424,6 @@ footer a {
         transform: rotate(180deg);
         overflow: hidden;
     }
-}
-
-.MARGIN-REMOVE {
-    padding-top: 400px;
 }
 
 .title-card {
@@ -559,4 +555,19 @@ footer a {
     position: relative;
     border-radius: 5px;
     margin-left: 30px;
+}
+
+.contact-box-web {
+    position: absolute;
+    width: 1111px;
+    height: 292px;
+    background: #e7816b;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+    top: 2183px;
+}
+
+.new__footer {
+    margin-top: 380px;
 }
