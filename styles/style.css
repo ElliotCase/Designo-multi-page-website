@@ -167,6 +167,12 @@ nav li {
     margin-left: 137px;
 }
 
+.projects__textbox-web-small {
+    width: 270px;
+    margin-top: 107px;
+    margin-left: 144px;
+}
+
 .projects__textbox-app {
     margin-top: 107px;
     margin-left: 144px;
@@ -475,6 +481,17 @@ footer a {
         "showcase__item-1 showcase__item-2 showcase__item-3"
         "showcase__item-4 showcase__item-5 showcase__item-6";
 }
+
+.showcase__container-x3 {
+    display: grid;
+    width: 1110px;
+    height: 478px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 32px 30px;
+    margin-bottom: 160px;
+    grid-template-areas: "showcase__item-1 showcase__item-2 showcase__item-3";
+}
 .showcase__item-1 {
     grid-area: showcase__item-1;
     width: 350px;
@@ -531,7 +548,9 @@ footer a {
     color: #e7816b;
     text-transform: uppercase;
 }
-
+.margin-left-30 {
+    margin-left: 30px;
+}
 .showcase__card:hover {
     background-color: E7816B;
 }
@@ -550,24 +569,29 @@ footer a {
 .projects__app-design {
     position: relative;
     border-radius: 5px;
+    cursor: pointer;
+}
+
+.projects__web-design {
+    position: relative;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #fff;
 }
 .projects__graphic-design {
     position: relative;
     border-radius: 5px;
     margin-left: 30px;
+    cursor: pointer;
 }
 
 .contact-box-web {
-    position: absolute;
-    width: 1111px;
-    height: 292px;
-    background: #e7816b;
-    border-radius: 15px;
-    display: flex;
-    justify-content: space-between;
     top: 2183px;
 }
 
+.contact-box-graphic {
+    top: 1673px;
+}
 .new__footer {
     margin-top: 380px;
 }
