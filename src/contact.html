@@ -17,30 +17,84 @@
         </a>
       </div>
       <ul class="menu">
-        <li class="underline"><a href="/starter-code/locations.html">Our Company</a></li>
+        <li class="underline"><a href="/src/about.html">Our Company</a></li>
         <li class="underline"><a href="/src/locations.html">Locations</a></li>
-        <li class="underline"><a href="#">Contact</a></li>
+        <li class="underline"><a href="/src/contact.html">Contact</a></li>
       </ul>
     </nav>
   </div>
 
   <section class="contact-section">
     <div class="container">
-      <div class="contact-us__card">
-        <div class="contact-us-textbox">
-          <h1></h1>
-          <p></p>
+      <div class="contact-us__card flex">
+        <div class="contact-us__textbox">
+          <h1 class="contact-us__title">Contact Us</h1>
+          <p>Ready to take it to the next level? Let’s talk about your project or idea and find out how we can help your
+            business grow. If you are looking for unique digital experiences that’s relatable to your users, drop us a
+            line.</p>
         </div>
         <div class="contact-us__form">
+          <form id="contact-form">
+            <div class="form-item">
+              <label for="name"></label>
+              <input type="text" id="name" placeholder="Name">
+              <p class="italic">Can't be empty</p>
+            </div>
+
+            <div class="form-item">
+              <label for="email"></label>
+              <input type="email" id="email" placeholder="Email Adress">
+              <p class="italic">Email invalid</p>
+            </div>
+
+            <div class="form-item">
+              <label for="Phone"></label>
+              <input type="text" id="phone" placeholder="Phone">
+              <p class="italic">Can't be empty</p>
+            </div>
+
+            <div class="form-item">
+              <label for="textarea"></label>
+              <textarea placeholder="Your Message" name="Message" id="message" cols="3" rows="3"></textarea>
+              <p class="italic">Can't be empty</p>
+            </div>
+            <button class="btn contact__btn-left" id="submit" type="submit" form="contact-form">SUBMIT</button>
+          </form>
 
         </div>
       </div>
     </div>
   </section>
 
+  <section>
+    <div class="container">
+      <div class="flex-row ">
+        <div class="gap  location__card">
+          <img src="/assets/shared/desktop/illustration-canada.svg" class="skills__img location__image" alt="" />
+          <h3 class="skills__title location__title">Canada</h3>
+          <button class="btn btn-peach">see location</button>
 
+        </div>
 
-  <footer class="footer__location">
+        <div class="gap location__card">
+          <img src="/assets/shared/desktop/illustration-australia.svg" class="skills__img location__image" alt="" />
+          <h3 class="skills__title location__title">australia</h3>
+          <button class="btn btn-peach">see location</button>
+
+        </div>
+
+        <div class="location__card">
+          <img src="/assets/shared/desktop/illustration-united-kingdom.svg" class="skills__img location__image"
+            alt="" />
+          <h3 class="skills__title location__title">united kingdom</h3>
+          <button class="btn btn-peach">see location</button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <footer class="footer__contact-page">
     <div class="container">
       <div class="footer__content flex">
         <div>
@@ -49,13 +103,13 @@
         <div>
           <ul class="flex footer__icons">
             <li>
-              <a class="footer__links underline" href="#">Our company</a>
+              <a class="footer__links underline" href="/src/about.html">Our company</a>
             </li>
             <li>
-              <a class="footer__links underline" href="#"> Locations</a>
+              <a class="footer__links underline" href="/src/locations.html"> Locations</a>
             </li>
             <li>
-              <a class="footer__links underline" href="#">Contact</a>
+              <a class="footer__links underline" href="/src/contact.html">Contact</a>
             </li>
           </ul>
         </div>
@@ -98,6 +152,7 @@
     </div>
   </footer>
 
+  <script src="./script.js"></script>
 </body>
 
 </html>

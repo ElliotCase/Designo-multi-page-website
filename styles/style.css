@@ -8,7 +8,10 @@
     --white: hsl(0, 0%, 100%);
     --light-gray: hsl(210, 17%, 95%);
 }
-
+html,
+body {
+    overflow-x: hidden;
+}
 * {
     margin: 0;
     padding: 0;
@@ -777,4 +780,377 @@ footer a {
     background: #e7816b;
     border-radius: 15px;
     margin-top: 64px;
+    margin-bottom: 160px;
+}
+
+.contact-us__textbox {
+    width: 540px;
+    height: 184px;
+    padding-left: 95px;
+    padding-top: 135px;
+}
+
+.contact-us__title {
+    margin-bottom: 32px;
+    color: #fff;
+}
+
+.contact-us__form {
+    width: 380px;
+    height: 371px;
+    margin-top: 55px;
+    margin-left: 95px;
+}
+
+.form-item {
+    border: none;
+    color: #ffffff;
+    font-family: Jost;
+    margin-bottom: 25px;
+    width: 380px;
+    height: 49px;
+    position: relative;
+}
+
+input,
+textarea {
+    background-color: transparent !important;
+    border: none;
+    outline: none;
+    width: 100%;
+    border-bottom: 1px solid white;
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 26px;
+    transition: all 0.1s ease;
+    resize: none;
+    padding-left: 15px;
+    position: absolute;
+    width: 100%;
+}
+
+input:placeholder {
+    color: #fff;
+    color: #ffffff;
+    margin-left: 20px;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+    padding-left: 20px;
+}
+
+input:focus {
+    border-bottom: 3px solid white;
+    transition: all 0.1s ease;
+}
+
+::placeholder {
+    color: #fff;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+    margin-left: 20px;
+    font-family: Jost;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 26px;
+}
+
+.contact__btn-left {
+    margin-left: 228px;
+    margin-top: 30px;
+}
+
+.form-item > p.active {
+    display: block;
+    pointer-events: none;
+}
+
+.form-item > p {
+    text-align: right;
+    padding-right: 36px;
+    position: relative;
+    font-weight: 400;
+    z-index: 1;
+    display: none;
+    font-style: italic;
+    pointer-events: none;
+}
+
+.form-item > p::after {
+    content: "";
+    position: absolute;
+    top: unset;
+    right: 8px;
+    bottom: unset;
+    left: unset;
+    width: 20px;
+    height: 20px;
+    background-image: url(/assets/contact/desktop/icon-error.svg);
+}
+
+.footer__contact-page {
+    margin-top: 0px;
+}
+
+@media screen and (max-width: 1200px) {
+    nav {
+        margin-left: 20px;
+        margin-right: 20px;
+        justify-content: space-between;
+    }
+    .card {
+        width: 689px;
+        height: 843px;
+        display: flex;
+        justify-content: center;
+    }
+    .container {
+        max-width: 689px;
+        width: 689px;
+    }
+    .card__hero {
+        height: 326px;
+        width: 573px;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        z-index: 1;
+        text-align: center;
+        margin-top: 60px;
+        padding: 0px;
+    }
+    .card__description {
+        width: 445px;
+    }
+
+    .card__image {
+        position: absolute;
+        top: 286px;
+        left: 35px;
+    }
+    .grid__container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 24px 0px;
+        grid-template-areas:
+            "web-design__projects"
+            "app-design__projects"
+            "graphic-design__projects";
+        width: 689px;
+        height: 649px;
+        margin-top: 120px;
+        margin-bottom: 120px;
+    }
+    .web-design__projects {
+        grid-area: web-design__projects;
+    }
+    .projects__image {
+        object-fit: cover;
+        width: 689px;
+        height: 200px;
+    }
+    .app-design__projects {
+        grid-area: app-design__projects;
+        margin: 0;
+    }
+    .graphic-design__projects {
+        grid-area: graphic-design__projects;
+    }
+    .projects__overlay--small {
+        height: 200px;
+    }
+    .projects__overlay--dark {
+        height: 200px;
+    }
+    .projects__textbox {
+        display: flex;
+        margin-top: 53px;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin-left: 218px;
+    }
+    .projects__textbox-graphic {
+        margin-left: 163px;
+    }
+    .flex-column {
+        flex-direction: column;
+    }
+    .skills__card {
+        display: flex;
+        width: 689px;
+        height: 202px;
+        margin-bottom: 32px;
+    }
+    .skills__textbox {
+        margin-left: 48px;
+        width: 439px;
+        height: 120px;
+        text-align: left;
+    }
+    .skills__title {
+        text-align: left;
+    }
+    .skills__description {
+        text-align: left;
+        margin: 0;
+        padding: 0;
+        width: 439px;
+        height: 78px;
+    }
+    .contact-box {
+        width: 690px;
+        height: 350px;
+        top: 2624px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .section__skills {
+        margin-bottom: 300px;
+    }
+    .contact__textbox {
+        width: 573px;
+        height: 148px;
+        margin: 0px;
+        padding: 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .contact__title {
+        margin: 0px;
+        padding: 0px;
+        width: 335px;
+        margin-bottom: 16px;
+    }
+    .contact__description {
+        width: 453px;
+    }
+    .contact__btn {
+        margin: 0px;
+        padding: 0px;
+        margin-top: 32px;
+    }
+    .footer__bottom {
+        width: 690px;
+        height: 78px;
+    }
+    .footer__contact {
+        width: 223px;
+        height: 78px;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .title-card {
+        width: 689px;
+        height: 252px;
+    }
+    .showcase__container {
+        height: 2030px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        gap: 32px 0px;
+        grid-template-areas:
+            "showcase__item-1"
+            "showcase__item-2"
+            "showcase__item-3"
+            "showcase__item-4"
+            "showcase__item-5"
+            "showcase__item-6";
+    }
+    .showcase__card {
+        width: 689px;
+        height: 310px;
+        display: flex;
+        flex-flow: row;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .showcase__image {
+        height: 310px;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 0px;
+        border-bottom-left-radius: 15px;
+    }
+    .showcase__bottom-card {
+        position: relative;
+        margin: 0px;
+        padding: 0px;
+        margin-left: 50px;
+        text-align: center;
+    }
+    .showcase__card-padding {
+        margin-left: 35px;
+    }
+    .contact-box-web {
+        top: 3298px;
+    }
+    .projects__two-card {
+        display: flex;
+        flex-direction: column;
+        width: 689px;
+        height: 423px;
+    }
+    .projects__graphic-design {
+        margin-left: 0px;
+        margin-top: 24px;
+    }
+    .projects__web-design {
+        margin-left: 0px;
+        margin-top: 24px;
+    }
+    .showcase__container-x5 {
+        height: 1688px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        gap: 32px 0px;
+        grid-template-areas:
+            "showcase__item-1"
+            "showcase__item-2"
+            "showcase__item-3"
+            "showcase__item-4"
+            "showcase__item-5";
+    }
+    .showcase__container-x3 {
+        height: 1004px;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 32px 0px;
+        grid-template-areas:
+            "showcase__item-1"
+            "showcase__item-2"
+            "showcase__item-3";
+    }
+    .contact-box-app {
+        top: 2956px;
+    }
+    .contact-box-graphic {
+        top: 2272px;
+    }
+    .flex-reverse {
+        flex-direction: column-reverse;
+    }
+    .about {
+        margin: 0;
+        padding: 0;
+    }
+    .about__image-div {
+        width: 689px;
+        height: 320px;
+    }
+    .about__image {
+        border-radius: 0px;
+        width: 720px;
+        height: 480px;
+    }
 }

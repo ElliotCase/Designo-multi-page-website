@@ -4,6 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale = 1.0, 
+maximum-scale=1.0, user-scalable=no" />
   <link rel="stylesheet" href="/styles/style.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
   <title>Frontend Mentor | Designo Agency Website Challenge</title>
@@ -19,7 +21,7 @@
       <ul class="menu">
         <li class="underline"><a href="/src/about.html">Our Company</a></li>
         <li class="underline"><a href="/src/locations.html">Locations</a></li>
-        <li class="underline"><a href="#">Contact</a></li>
+        <li class="underline"><a href="/src/contact.html">Contact</a></li>
       </ul>
     </nav>
   </div>
@@ -85,40 +87,55 @@
 
   <section class="section__skills">
     <div class="container">
-      <div class="flex-row ">
+      <div class="flex-row flex-column">
         <div class="gap skills__card">
-          <img src="/assets/home/desktop/illustration-passionate.svg" class="skills__img" alt="" />
-          <h3 class="skills__title">Passionate</h3>
-          <p class="skills__description">
-            Each project starts with an in-depth brand research to ensure we only create products that serve a purpose.
-            We merge
-            art, design, and technology into exciting new solutions.
-          </p>
+          <div>
+            <img src="/assets/home/desktop/illustration-passionate.svg" class="skills__img" alt="" />
+          </div>
+          <div class="skills__textbox">
+            <h3 class="skills__title">Passionate</h3>
+            <p class="skills__description">
+              Each project starts with an in-depth brand research to ensure we only create products that serve a
+              purpose.
+              We merge
+              art, design, and technology into exciting new solutions.
+            </p>
+          </div>
         </div>
 
         <div class="gap skills__card">
-          <img src="/assets/home/desktop/illustration-resourceful.svg" class="skills__img" alt="" />
-          <h3 class="skills__title">Resourceful</h3>
-          <p class="skills__description"> Everything that we do has a strategic purpose. We use an agile approach in all
-            of our projects and value
-            customer
-            collaboration. It guarantees superior results that fulfill our clients’ needs.
-          </p>
+          <div>
+            <img src="/assets/home/desktop/illustration-resourceful.svg" class="skills__img" alt="" />
+          </div>
+
+          <div class="skills__textbox">
+            <h3 class="skills__title">Resourceful</h3>
+            <p class="skills__description"> Everything that we do has a strategic purpose. We use an agile approach in
+              all
+              of our projects and value
+              customer
+              collaboration. It guarantees superior results that fulfill our clients’ needs.
+            </p>
+          </div>
         </div>
 
         <div class="skills__card">
-          <img src="/assets/home/desktop/illustration-friendly.svg" class="skills__img" alt="" />
-          <h3 class="skills__title">Friendly</h3>
-          <p class="skills__description"> We are a group of enthusiastic folks who know<br> how to put people first. Our
-            success depends on our
-            customers,
-            and we
-            strive to give them the best experience a company can provide.
-          </p>
+          <div>
+            <img src="/assets/home/desktop/illustration-friendly.svg" class="skills__img" alt="" />
+          </div>
+          <div class="skills__textbox">
+            <h3 class="skills__title">Friendly</h3>
+            <p class="skills__description"> We are a group of enthusiastic folks who know<br> how to put people first.
+              Our
+              success depends on our
+              customers,
+              and we
+              strive to give them the best experience a company can provide.
+            </p>
+          </div>
         </div>
-      </div>
 
-    </div>
+      </div>
   </section>
 
   <section>
@@ -141,7 +158,6 @@
   </section>
 
 
-
   <footer>
     <div class="container">
       <div class="footer__content flex">
@@ -151,13 +167,13 @@
         <div>
           <ul class="flex footer__icons">
             <li>
-              <a class="footer__links underline" href="#">Our company</a>
+              <a class="footer__links underline" href="/src/about.html">Our company</a>
             </li>
             <li>
-              <a class="footer__links underline" href="#"> Locations</a>
+              <a class="footer__links underline" href="/src/locations.html"> Locations</a>
             </li>
             <li>
-              <a class="footer__links underline" href="#">Contact</a>
+              <a class="footer__links underline" href="/src/contact.html">Contact</a>
             </li>
           </ul>
         </div>
@@ -177,7 +193,7 @@
             P : +1 253-863-8967<br>
             M : contact@designo.com</p>
         </div>
-        <div>
+        <div class="footer__icons-box">
           <ul class="footer__icons flex ">
             <li>
               <a href="#"><img src="./assets/shared/desktop/icon-facebook.svg" alt="icon-facebook" /></a>
@@ -206,12 +222,12 @@
 
 
 
-  <!-- 
- 
-  
 
 
-  -->
+
+
+
+
 </body>
 
 </html>
