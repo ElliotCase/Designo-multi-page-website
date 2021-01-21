@@ -325,6 +325,8 @@ nav li {
     height: 56px;
     border: none;
     transition: all 0.7s ease;
+    transition-property: color, background-color;
+
     cursor: pointer;
 }
 .btn:hover {
@@ -560,7 +562,7 @@ footer a {
     margin-left: 30px;
 }
 .showcase__card:hover {
-    background-color: E7816B;
+    background-color: #e7816b;
 }
 
 .showcase__card:hover .showcase__title,
@@ -1140,17 +1142,247 @@ input:focus {
     .flex-reverse {
         flex-direction: column-reverse;
     }
+    .about__image-div {
+        background-image: url(/assets/about/tablet/image-about-hero.jpg);
+    }
+    .about__image {
+        display: none;
+    }
     .about {
         margin: 0;
         padding: 0;
+        width: 689px;
+        height: 312px;
+        margin-bottom: 120px;
+        border-top-left-radius: 0px;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
-    .about__image-div {
+
+    .about__hero {
+        width: inherit;
+        height: 148px;
+        margin: 0px;
+        padding: 0px;
+        flex-direction: column;
+        align-items: center;
+        margin-right: 0px;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        margin-top: 64px;
+    }
+    .about__title {
+        margin: 0px;
+        padding: 0px;
+        margin-bottom: 16px;
+        height: 48px;
+        text-align: center;
+    }
+    .about__description {
+        margin: 0px;
+        height: 104px;
+        width: 573px;
+        text-align: center;
+    }
+
+    .talent__image-div {
+        background-image: url(/assets/about/tablet/image-world-class-talent.jpg);
+        margin-top: 0px !important;
+    }
+    .talent__image {
+        display: none;
+    }
+    .talent {
+        margin: 0;
+        padding: 0;
+        width: 689px;
+        height: 407px;
+        margin-bottom: 120px;
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .talent__textbox {
+        width: inherit;
+        height: 280px;
+        text-align: center;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 68px;
+    }
+    .talent__title {
+        margin: 0;
+        padding: 0;
+        width: 573px;
+        margin-bottom: 24px;
+    }
+    .talent__description {
+        margin: 0;
+        padding: 0;
+        width: 573px;
+    }
+    .location-center {
+        justify-content: center;
+        align-items: center;
+    }
+    .location__title {
+        text-align: center;
+    }
+    .realdeal__image-div {
+        background-image: url(/assets/about/tablet/image-real-deal.jpg);
+    }
+    .tablet-image {
+        background-repeat: no-repeat;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        margin-top: 64px;
         width: 689px;
         height: 320px;
     }
-    .about__image {
-        border-radius: 0px;
-        width: 720px;
-        height: 480px;
+    .contact-box-about {
+        top: 4189px;
+    }
+
+    .map__image-tablet {
+        background-repeat: no-repeat;
+        width: 689px;
+        height: 320px;
+        margin-bottom: 24px;
+        border-radius: 15px;
+    }
+    .canada__map-image {
+        background-image: url(/assets/locations/tablet/image-map-canada.png);
+    }
+    .uk__map-image {
+        background-image: url(/assets/locations/tablet/image-map-uk.png);
+    }
+    .australia__map-image {
+        background-image: url(/assets/locations/tablet/image-map-australia.png);
+    }
+    .map__image {
+        display: none;
+    }
+    .map-location {
+        width: 689px;
+        border-radius: 15px;
+        margin-bottom: 120px;
+    }
+    .contact-box-location {
+        top: 2605px;
+    }
+    .contact-us__card {
+        width: 689px;
+        height: 711px;
+        position: relative;
+    }
+    .contact-us__textbox {
+        padding-top: 0px;
+        width: 573px;
+        margin-top: 71px;
+        margin-left: 58px;
+        height: 158px;
+        padding-left: 0px;
+    }
+    .contact-us__form {
+        margin: 0;
+        padding: 0;
+        width: 573px;
+        height: 291px;
+        display: flex;
+        margin-left: 58px;
+        margin-top: 40px;
+    }
+
+    .form-item {
+        width: 573px;
+    }
+    .contact__btn-left {
+        position: absolute;
+        right: 58px;
+        bottom: 73px;
+        margin: 0px;
+        padding: 0px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .menu {
+        display: none;
+    }
+    .container {
+        width: 100%;
+        max-width: none;
+    }
+    nav {
+        height: 96px;
+        margin: 0px;
+    }
+    .card {
+        margin: 0px;
+        padding: 0px;
+        width: initial;
+    }
+    .logo {
+        margin-top: 35px;
+        margin-left: 24px;
+    }
+    .web-design__image {
+        background-image: url(/assets/home/mobile/image-web-design.jpg);
+    }
+    .app-design__image {
+        background-image: url(/assets/home/mobile/image-app-design.jpg);
+    }
+    .graphic-design__image {
+        background-image: url(/assets/home/mobile/image-graphic-design.jpg);
+    }
+    .projects__image-div {
+        width: 327px;
+        height: 250px;
+        margin-bottom: 24px;
+        border-radius: 15px;
+        background-repeat: no-repeat;
+    }
+    .projects__image {
+        display: none;
+    }
+    .projects__overlay--dark {
+        width: 327px;
+        height: 250px;
+    }
+
+    .mobile-title {
+        font-size: 28px;
+        line-height: 36px;
+        text-align: center;
+        letter-spacing: 1.4px;
+    }
+    .projects__textbox {
+        margin-left: 56px;
+        margin-top: 90px;
+        padding: 0px;
+        width: 215px;
+        height: 71px;
+    }
+    .grid__container {
+        width: 327px;
+        height: 798px;
+        margin: auto;
+        margin-top: 120px;
+        margin-bottom: 120px;
+        gap: 0px 0px;
+    }
+    .projects__textbox-graphic {
+        width: 255px;
+        margin-left: 36px;
+        margin-top: 90px;
     }
 }
