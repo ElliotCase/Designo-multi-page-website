@@ -13,7 +13,7 @@
 
   <div class="container">
     <nav>
-      <div>
+      <div class="logo">
         <a href="/index.html"><img src="/assets/shared/desktop/logo-dark.png" alt="">
         </a>
       </div>
@@ -104,24 +104,23 @@
     <section>
       <div class="container">
         <div class="flex projects__two-card">
-          <div class="projects__web-design">
+          <div class="web-design__projects web-design__image projects__image-div">
             <a href="/src/web-design.html">
               <img src="/assets/home/desktop/image-web-design-small.jpg" class="projects__image " alt="">
               <div class="projects__overlay--dark projects__overlay--small projects__overlay--peach"></div>
               <div class="projects__textbox projects__textbox-web-small">
-                <h1 class="projects__title">Web Design</h1>
+                <h1 class="projects__title mobile-title">Web Design</h1>
                 <p class="projects__description"> View Projects <img src="/assets/shared/desktop/icon-right-arrow.svg "
                     class="projects__arrow" alt=""></p>
               </div>
             </a>
           </div>
-          <div class="projects__graphic-design">
+          <div class="graphic-design__projects graphic-design__image projects__image-div margin-left-30">
             <a href="/src/graphic-design.html">
               <img src="/assets/home/desktop/image-graphic-design.jpg" class="projects__image" alt="">
               <div class="projects__overlay--dark projects__overlay--small projects__overlay--peach"></div>
-
               <div class="projects__textbox projects__textbox-graphic">
-                <h1 class="projects__title">Graphic Design</h2>
+                <h1 class="projects__title mobile-title">Graphic Design</h2>
                   <p class="projects__description"> View Projects <img src="/assets/shared/desktop/icon-right-arrow.svg"
                       class="projects__arrow" alt="">
                   </p>
@@ -134,17 +133,20 @@
 
     <section>
       <div class="container">
-        <div class="contact-box-web contact-box contact-box-app">
-          <div class="contact__textbox">
-            <h1 class="contact__title">Let’s talk about your project</h1>
-            <p class="contact__description"> Ready to take it to the next level? Contact us today and find out how our
-              expertise can help your business grow.
-            </p>
-          </div>
-          <div>
-            <button class="contact__btn btn">
-              Get in touch
-            </button>
+        <div class="mobile-div mobile-div-web">
+          <div class="contact-box contact-box-app">
+            <div class="contact__textbox">
+              <h1 class="contact__title">Let’s talk about your project</h1>
+              <p class="contact__description"> Ready to take it to the next level? Contact us today and find out how our
+                expertise can help your business grow.
+              </p>
+
+            </div>
+            <div>
+              <button class="contact__btn btn">
+                Get in touch
+              </button>
+            </div>
           </div>
         </div>
       </div>
@@ -154,12 +156,12 @@
 
     <footer class="new__footer">
       <div class="container">
-        <div class="footer__content flex">
+        <div class="footer__content-web flex flex-column">
           <div>
             <img src="/assets/shared/desktop/logo-light.png" class="footer__logo" alt="">
           </div>
           <div>
-            <ul class="flex footer__icons">
+            <ul class="flex footer__icons flex-column">
               <li>
                 <a class="footer__links underline" href="/src/about.html">Our company</a>
               </li>
@@ -187,7 +189,7 @@
               P : +1 253-863-8967<br>
               M : contact@designo.com</p>
           </div>
-          <div>
+          <div class="footer__icons-box">
             <ul class="footer__icons flex ">
               <li>
                 <a href="#"><img src="/assets/shared/desktop/icon-facebook.svg" alt="icon-facebook" /></a>

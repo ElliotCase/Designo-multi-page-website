@@ -976,6 +976,12 @@ input:focus {
         text-align: center;
         margin-left: 218px;
     }
+    .margin-left-30 {
+        margin: 0;
+    }
+    .margin-bottom-12px {
+        margin-bottom: 12px;
+    }
     .projects__textbox-graphic {
         margin-left: 163px;
     }
@@ -1313,6 +1319,9 @@ input:focus {
         margin: 0px;
         padding: 0px;
     }
+    .graphic-design__projects {
+        margin-top: 24px;
+    }
 }
 @media screen and (max-width: 768px) {
     .menu {
@@ -1513,11 +1522,12 @@ input:focus {
     }
     .footer__bottom {
         width: 100%;
-        height: 50%;
+        height: unset;
         display: flex;
         flex-flow: column;
         justify-content: center;
         align-items: center;
+        margin-top: 40px;
     }
     .footer__contact {
         display: flex;
@@ -1531,5 +1541,139 @@ input:focus {
         margin: 0;
         padding: 0;
         width: 327px;
+    }
+    .title-card {
+        width: initial;
+        height: 320px;
+        border-radius: 0px;
+        overflow: visible;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+    }
+    .title-card::after {
+        display: none;
+    }
+    .title-card__heading {
+        padding-top: 105px;
+    }
+    .title-card__content {
+        width: 327px;
+    }
+    .title-card__description {
+        font-size: 15px;
+        line-height: 25px;
+        text-align: center;
+    }
+    .none {
+        display: none;
+    }
+    .showcase__container {
+        width: unset;
+        height: 3068px;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 96px;
+    }
+    .showcase__card {
+        width: 327px;
+        height: 478px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+        flex-flow: column;
+        -webkit-box-pack: start;
+        -ms-flex-pack: start;
+        justify-content: flex-start;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+    .showcase__image {
+        width: 100%;
+        height: 320px;
+        border-top-right-radius: 15px;
+        border-bottom-left-radius: 0px;
+    }
+    .showcase__bottom-card {
+        margin: 0;
+        text-align: center;
+    }
+    .projects__two-card {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+        flex-flow: column;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        width: unset;
+        height: 524px;
+        margin-top: 0px;
+    }
+    .projects__overlay--dark {
+        height: 250px;
+    }
+    .projects__image-div {
+        margin-bottom: 0px;
+    }
+    .margin-top-12 {
+        margin-top: 12px;
+    }
+    .margin-left-30 {
+        margin: 0;
+    }
+    .margin-bottom-12px {
+        margin: 0;
+    }
+    .showcase__container {
+        margin-bottom: 96px;
+    }
+    .contact-box-web {
+        top: 4296px;
+    }
+    .mobile-div-web {
+        height: unset;
+    }
+    .new__footer {
+        margin-top: 240px;
+    }
+    .footer__content-web {
+        justify-content: center;
+        align-items: center;
+        padding-top: 207px;
+    }
+    .footer__icons-box {
+        margin-top: 42px;
+    }
+    .showcase__container-x5 {
+        height: 2550px;
+    }
+    .contact-box-app {
+        top: 3778px;
+    }
+    .showcase__container-x3 {
+        width: unset;
+        height: 1514px;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 96px;
+    }
+    .contact-box-graphic {
+        top: 2806px;
     }
 }
