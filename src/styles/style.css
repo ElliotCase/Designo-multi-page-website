@@ -21,6 +21,18 @@ body {
     list-style: none;
     text-decoration: none;
 }
+
+a.button {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+    display: table-cell;
+
+    text-decoration: none;
+    color: initial;
+    text-align: center;
+    vertical-align: middle;
+}
 body {
     font-family: "Jost", sans-serif;
 }
@@ -203,7 +215,7 @@ nav li {
     width: 100%;
     height: 640px;
     border-radius: 15px;
-    transition: all 0.7s ease;
+    transition: background-color 0.7s ease;
 }
 
 .projects__overlay--small {
@@ -544,7 +556,7 @@ footer {
     height: 478px;
     background: #fdf3f0;
     border-radius: 15px;
-    transition: all 0.3s ease;
+    transition: background-color 0.3s ease;
     cursor: pointer;
 }
 
@@ -1450,6 +1462,7 @@ input:focus {
     .gap {
         margin-right: 0;
     }
+  
     .skills__description {
         text-align: center;
         width: 327px;
